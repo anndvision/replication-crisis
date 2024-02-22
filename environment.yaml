@@ -1,0 +1,14 @@
+name: ml-field-experiments
+channels:
+  - defaults
+  - conda-forge
+dependencies:
+  - black
+  - python=3.10.12
+  - pip
+  - jupyter
+  - rpy2
+  - r-grf
+  - r-mlr3
+  - r-estimatr 
+  - numpy<=1.25

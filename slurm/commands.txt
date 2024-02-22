@@ -1,0 +1,125 @@
+# GSS
+# balance 0.5
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method DIM --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method Lin --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method Lin-Lasso --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method OLS --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method OLS-Lasso --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method CausalForest --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method GP --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+# balance 0.2
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method DIM --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method Lin --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method Lin-Lasso --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method OLS --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method OLS-Lasso --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method CausalForest --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/gss.py --method GP --output-dir experiments/ --n 2000 --balance 0.2 --num-reps 100
+
+# Polynomial
+## N = 200
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Unadjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Interact --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Adjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Interact --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Adjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Interact --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Adjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method CausalForest --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+
+## N = 500
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Unadjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Interact --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Adjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Interact --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Adjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Interact --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Adjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method CausalForest --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+
+## N = 1000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Unadjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Interact --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Adjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Interact --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Adjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Interact --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Adjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method CausalForest --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+
+## N = 2000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Unadjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Interact --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Adjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Interact --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Adjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Interact --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GP-Adjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method CausalForest --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+
+## N = 10000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Unadjusted --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Interact --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Adjusted --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Interact --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Adjusted --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method CausalForest --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+
+## N = 100000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Unadjusted --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Interact --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method OLS-Adjusted --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Interact --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method GRF-Adjusted --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/polynomial.py --method CausalForest --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+
+# Funky
+## N = 200
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Unadjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Interact --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Adjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Interact --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Adjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Interact --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Adjusted --output-dir experiments/ --n 200 --balance 0.5 --num-reps 100
+
+## N = 500
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Unadjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Interact --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Adjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Interact --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Adjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Interact --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Adjusted --output-dir experiments/ --n 500 --balance 0.5 --num-reps 100
+
+## N = 1000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Unadjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Interact --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Adjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Interact --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Adjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Interact --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Adjusted --output-dir experiments/ --n 1000 --balance 0.5 --num-reps 100
+
+## N = 2000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Unadjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Interact --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Adjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Interact --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GP-Adjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Interact --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Adjusted --output-dir experiments/ --n 2000 --balance 0.5 --num-reps 100
+
+## N = 10000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Unadjusted --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Interact --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Adjusted --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Interact --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Adjusted --output-dir experiments/ --n 10000 --balance 0.5 --num-reps 100
+
+## N = 100000
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Unadjusted --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Interact --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method OLS-Adjusted --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Interact --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
+sbatch slurm/slurm-ate.sh python3 ml_field_experiments/covariate_adjustment/funky.py --method GRF-Adjusted --output-dir experiments/ --n 100000 --balance 0.5 --num-reps 100
