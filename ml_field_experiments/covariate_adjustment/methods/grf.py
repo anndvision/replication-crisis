@@ -46,8 +46,8 @@ class GRF(Test):
 
         s = (m1 - m0).mean()
         s += (y[z == 1] - m1[z == 1]).mean()
-        s -= (y[z == 0] - m1[z == 0]).mean()
-        s /= 2
+        s -= (y[z == 0] - m0[z == 0]).mean()
+
         y_pred = z * m1 + (1 - z) * m0
         r2 = 1 - (np.square(y - y_pred).sum() / np.square(y - y.mean()).sum())
         adj = (n - 1) / (n - d - 1)
