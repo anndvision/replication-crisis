@@ -64,6 +64,8 @@ class GRFTest(Test):
 
         m = sm.OLS(y, sm.add_constant(X))
         results = m.fit().get_robustcov_results()
+        if self.verbose == True:
+            print(results.summary())
 
         p_val_ate = results.pvalues[-2]
         p_val_het = 1 - stats.t.cdf(results.tvalues[-1], results.df_resid)

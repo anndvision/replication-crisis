@@ -62,7 +62,6 @@ class SVRTest(Test):
 
         if self.verbose:
             print(results.summary())
-            print(s.var())
 
         p_val_ate = results.pvalues[-2]
         p_val_het = (

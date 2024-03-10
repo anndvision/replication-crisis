@@ -98,7 +98,6 @@ class GPTest(Test):
 
         if self.verbose:
             print(results.summary())
-            print(s.var())
 
         p_val_ate = results.pvalues[-2]
         p_val_het = 1 - stats.t.cdf(results.tvalues[-1], results.df_resid)

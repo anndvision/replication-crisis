@@ -11,4 +11,5 @@ dependencies:
   - r-grf
   - r-mlr3
   - r-estimatr 
+  - glpk
   - numpy<=1.25
